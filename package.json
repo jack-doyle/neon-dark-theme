@@ -1,0 +1,15 @@
+{
+    "name": "jackdoyle.neon-dark-theme",
+    "title": "Neon Dark Theme",
+    "description": "A subtle neon dark theme.",
+    "homepage": "https://github.com/jack-doyle/neon-dark-theme",
+    "version": "1.0",
+    "author": "Jack Doyle <ie.jackdoyle@gmail.com> (http://jack-doyle.github.io)",
+    "license": "MIT",
+    "theme": {
+        "file": "neon-dark.less",
+        "dark": "true",
+        "addModeClass": "true"
+    },
+    "keywords": ["theme", "dark", "neon"]
+}

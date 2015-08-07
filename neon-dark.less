@@ -1,0 +1,204 @@
+/* [Variables] 
+---------------------------------------------------------*/
+@background: #333333;
+@foreground: #ddd;
+
+
+
+/* [Editor] 
+---------------------------------------------------------*/
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #fff;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;    
+    }
+}
+
+
+/* [CSS Styling] 
+---------------------------------------------------------*/
+/* cm-string-2    : some CSS values */
+/* cm-property    : CSS properties */
+/* cm-atom        : CSS values */
+
+.cm-string-2 {color: #f5c890;}
+.cm-property {color: #62b4fa;} 
+.cm-atom, .cm-variable-2 {color: @foreground;} 
+
+
+
+/* [HTML Styling] 
+---------------------------------------------------------*/
+/* cm-tag:      : HTML elements */
+/* cm-bracket   : HTML < </ > */
+/* cm-attribute : HTML attributes (class="" id="") */
+/* cm-string    : "string" */
+
+.cm-tag, .cm-bracket {
+    color: #F92672;
+}
+
+.cm-attribute, .cm-string,  {
+    color: #A6E22E;
+}
+
+
+
+/* [Javascript Styling] 
+---------------------------------------------------------*/
+/* cm-def           : variable declarations and parameters */
+/* cm-variable-3    : variables */
+/* cm-variable      : class names, $ */
+.cm-def, .cm-variable, .cm-variable-3 {
+    color: @foreground;
+}
+
+
+
+/* [Other] 
+---------------------------------------------------------*/
+
+.cm-meta, .cm-builtin, .cm-quote {
+    color: #F92672;
+}
+
+.cm-operator, .cm-plus {
+    color: @foreground
+}
+
+.cm-number {color: #f39c12;}
+.cm-comment {color: #808080;}
+.cm-error, .cm-minus {color: #dc322f;}
+.cm-header {color: #d85896;}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4;}
+.cm-keyword {color: #F92672;}
+.cm-qualifier {color: #F39C12;}
+
+
+
+/* [Extra CSS] 
+---------------------------------------------------------*/
+
+.CodeMirror-searching {
+    background-color: #d3cd69;
+    &.searching-current-match {
+        background-color: #f6a644;
+    }
+}
+
+
+.CodeMirror-cursor {
+    border-left: 2px solid #ddd !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #767676;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: rgba(50, 0, 100, 0.1);
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: #C9586E;
+    color: #fff;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 2px solid #fff;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #767676;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #2f2f2f;
+    }
+
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+    }
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: #666;
+}
+.CodeMirror-foldgutter-folded:after {
+    color: #aaa;
+}
+
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: #888;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: #000;
+    color: #ccc;
+    background-color: #444;
+}
+
+
+
+/* [Non-editor styling] 
+---------------------------------------------------------*/
+
+.image-view,
+.not-editor {   
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+
+
